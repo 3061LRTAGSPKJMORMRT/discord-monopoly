@@ -438,7 +438,6 @@ function capitalize(str) {
 };
 
 function manageBankruptPlayer(session, player, failedAnswers) {
-	let failedAnswers = 0;
 	let allOwnedTiles = session.occupiedProperties.keyArray().filter(property => isEqual(property.owner, player));
 	session.stackMessage(`${player.username}'s balance is -$${Math.abs(player.cash)}.`);
 
