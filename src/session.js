@@ -1,6 +1,6 @@
 const Board = require("./board.json");
 const Callbacks = require("./collectorCallbacks.js");
-const {Collection, RichEmbed} = require("discord.js");
+const {Collection, MessageEmbed} = require("discord.js");
 const Collectors = require("./collectors.js");
 const Chance = require("./chance.js");
 const Community = require("./community.js");
@@ -402,7 +402,7 @@ Session.prototype.toggleTurns = function() {
 
 function createEmbed(array) {
 	const fields = prepareFields(array);
-	return new RichEmbed({
+	return new MessageEmbed({
 		color: 0x366B13,
 		fields,
 		footer: {
