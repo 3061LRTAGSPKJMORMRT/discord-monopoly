@@ -1,6 +1,6 @@
 {
   "name": "discord-monopoly",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple monopoly bot.",
   "main": "src/index.js",
   "scripts": {
