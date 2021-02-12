@@ -24,7 +24,7 @@ function updatePreset(opts) {
 
 function targetChannel(message) {
 	if (!(message.channel instanceof TextChannel)) {
-		throw new Error("Channel must be part of a server.");
+		throw new Error("Shadow is noob");
 	} else if ((config.channel ? message.channel.id == config.channel : true) && config.owners.includes(message.author.id)) {
 		playGame(message);
 	}
